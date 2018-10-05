@@ -22,13 +22,16 @@ def solve(n):
     for i in range(n):
         j=0
         t=i
-        while j<=50:
+        f=0
+        while j<=50 and f==0:
             t=t+retourner(t)
             if palindrome(t):
-                m+=1
-                j+=1
+                f=1
+            j+=1
+        if j==51:
+            m+=1
+                
     return m
-
 
 print(solve(10000))
 
