@@ -23,10 +23,10 @@ def solve(n):
         j=0
         t=i
         while j<=50:
-            
             t=t+retourner(t)
             if palindrome(t):
                 m+=1
+                j+=1
     return m
 
 
